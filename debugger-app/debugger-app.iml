@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="debugger-app-3.0.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="org.apache.pdfbox.debugger-app" bundleVersion="3.0.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Description" value="The Apache Software Foundation provides support for the Apache community of open-source software projects.The Apache projects are characterized by a collaborative, consensus based development process, an open andpragmatic software license, and a desire to create high quality software that leads the way in its field.We consider ourselves not simply a group of projects sharing a server, but rather a community of developersand users." />
+          <property key="Bundle-Vendor" value="The Apache Software Foundation" />
+          <property key="Bundle-DocURL" value="http://pdfbox.apache.org/" />
+          <property key="Export-Package" value="org.apache.pdfbox.*" />
+          <property key="Embed-Transitive" value="true" />
+          <property key="Embed-Dependency" value="*;scope=provided;inline=org/apache/**|org/bouncycastle/**" />
+          <property key="Import-Package" value="!junit.framework,!junit.textui,javax.*;resolution:=optional,org.apache.avalon.framework.logger;resolution:=optional,org.apache.log;resolution:=optional,org.apache.log4j;resolution:=optional,*" />
+          <property key="Main-Class" value="org.apache.pdfbox.debugger.PDFDebugger" />
+          <property key="Bundle-Name" value="Apache PDFBox Debugger application" />
+          <property key="Include-Resource" value="@$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk15on/1.57/bcmail-jdk15on-1.57.jar!/org/apache/**,@$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk15on/1.57/bcmail-jdk15on-1.57.jar!/org/bouncycastle/**,@$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.57/bcpkix-jdk15on-1.57.jar!/org/apache/**,@$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.57/bcpkix-jdk15on-1.57.jar!/org/bouncycastle/**,@$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/org/apache/**,@$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/org/bouncycastle/**,@$MODULE_DIR$/../debugger/pom.xml!/org/apache/**,@$MODULE_DIR$/../debugger/pom.xml!/org/bouncycastle/**,@$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.57/bcprov-jdk15on-1.57.jar!/org/apache/**,@$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.57/bcprov-jdk15on-1.57.jar!/org/bouncycastle/**,@$MODULE_DIR$/../pdfbox/pom.xml!/org/apache/**,@$MODULE_DIR$/../pdfbox/pom.xml!/org/bouncycastle/**,@$MODULE_DIR$/../fontbox/pom.xml!/org/apache/**,@$MODULE_DIR$/../fontbox/pom.xml!/org/bouncycastle/**" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="pdfbox-debugger" scope="PROVIDED" />
+    <orderEntry type="module" module-name="pdfbox (1)" scope="PROVIDED" />
+    <orderEntry type="module" module-name="fontbox" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.bouncycastle:bcmail-jdk15on:1.57" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.57" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.bouncycastle:bcprov-jdk15on:1.57" level="project" />
+  </component>
+</module>
